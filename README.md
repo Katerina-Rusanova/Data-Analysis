@@ -9,9 +9,4 @@ run end-to-end in Notebook/notebook-synthetic.ipynb:
   * examine correlations and distributions
   * and finish with written insights.
 
-To keep the analysis reproducible while guaranteeing that no row can be traced to a real record,
-the pipeline runs on a synthetic dataset (realtor-data-synthetic.csv, regenerated deterministically
-by generate_synthetic.py, seed 20261020) that preserves the original schema, per-column missing-value counts,
-and per-region row counts but resamples every column's values from its own empirical distribution —
-region and city labels are invented (Region-XX with Region-XX-City-YY cities), and joint structure (correlations)
-is destroyed by that resampling, so the §4/§5 claims must be re-derived from the synthetic file.
+The pipeline runs on a synthetic dataset.
