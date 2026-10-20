@@ -1,8 +1,6 @@
 # Data-Analysis
-Portfolio of exploratory data analysis projects
 
-
-This repository holds an exploratory data analysis (EDA) of a real-estate listings dataset
+This repository holds an **Exploratory Data Analysis** (EDA) of a real-estate listings dataset
 from realtor.com (≈2.2 M rows, 12 columns, covering listings from 1969–2022),
 run end-to-end in Notebook/notebook-synthetic.ipynb:
   * clean data (dtypes, duplicates, missing values)
