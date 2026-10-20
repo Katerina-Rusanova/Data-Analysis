@@ -1,4 +1,4 @@
-# Data-Analysis
+# Data Analysis
 
 This repository holds an **Exploratory Data Analysis** (EDA) of a real-estate listings dataset
 from realtor.com (≈2.2 M rows, 12 columns, covering listings from 1969–2022),
