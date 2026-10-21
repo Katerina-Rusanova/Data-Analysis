@@ -1,0 +1,21 @@
+# Recreate the environment the EDA notebooks + generator scripts run in.
+# Nothing else is imported — stdlib (glob/math/os/datetime) covers the rest;
+# every pin below was read from /Users/rusanov/.venvs/eda (Python 3.14.6),
+# so `pip install -r requirements.txt` rebuilds the exact environment.
+#
+#   /opt/homebrew/bin/python3.14 -m venv /Users/rusanov/.venvs/eda   # needs Python 3.14
+#   /Users/rusanov/.venvs/eda/bin/pip install -r requirements.txt
+#   # regenerate data (do both, in this order, or parts drift from the whole CSV):
+#   MPLBACKEND=Agg /Users/rusanov/.venvs/eda/bin/python Notebook/generate_synthetic.py
+#   MPLBACKEND=Agg /Users/rusanov/.venvs/eda/bin/python Notebook/split_synthetic.py
+
+pandas==3.0.6           # read_csv/globbing of the parts, groupby, stats
+numpy==2.5.4            # resampling with replacement (seed 20261020)
+matplotlib==3.11.2      # kept headless with MPLBACKEND=Agg
+seaborn==0.13.2         # pulls matplotlib itself
+
+# notebook execution toolchain: `jupyter nbconvert --to notebook --execute`
+# (plus the plain `jupyter` CLI) is run by hand — nbconvert pulls nbclient
+# and jupyter-core, ipykernel is the kernel they spawn:
+nbconvert==7.17.2
+ipykernel==7.4.0
