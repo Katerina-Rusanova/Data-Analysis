@@ -1,0 +1,16 @@
+# Install this file (`pip install -r requirements.txt`) to recreate the
+# environment the EDA notebook runs in.
+#
+#   python3.14 -m venv .venv   # run in this folder; needs Python 3.14 available
+#   .venv/bin/pip install -r requirements.txt
+
+pandas==3.0.6           # read_csv/globbing of the parts, groupby, stats
+numpy==2.5.4            # resampling with replacement (seed 20261020)
+matplotlib==3.11.2      # kept headless with MPLBACKEND=Agg
+seaborn==0.13.2         # pulls matplotlib itself
+
+# notebook execution toolchain: `jupyter nbconvert --to notebook --execute`
+# (plus the plain `jupyter` CLI) is run by hand — nbconvert pulls nbclient
+# and jupyter-core, ipykernel is the kernel they spawn:
+nbconvert==7.17.2
+ipykernel==7.4.0
