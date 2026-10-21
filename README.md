@@ -1,6 +1,6 @@
-# Data Analysis
+# Exploratory Data Analysis
 
-## Exploratory Data Analysis notebook
+## Description
 
 This folder holds an exploratory data analysis of ~2.2M synthetic real-estate property
 listings modelled on realtor.com data (1969-2022).
