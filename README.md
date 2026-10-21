@@ -14,7 +14,7 @@ The pipeline runs in `notebook-synthetic.ipynb`. Everything is computed from the
 ├── requirements.txt             ← pip install -r to rebuild the venv, then run the notebook
 ├── README.md
 ├── data/
-│   └── realtor-data-synthetic-part-01.csv … part-09.csv   (each < 24 MB → uploadable)
+│   └── realtor-data-synthetic-part-01.csv … part-09.csv   (each < 24 MB)
 ```
 
 
