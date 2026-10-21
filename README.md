@@ -1,11 +1,9 @@
-# Exploratory Data Analysis
+# Data Analysis
 
 ## Description
 
 This folder holds an exploratory data analysis of ~2.2M synthetic real-estate property
-listings modelled on realtor.com data (1969-2022).
-
-Everything is computed from the **synthetic** dataset — nine CSV parts in `data/`.
+listings modelled on realtor.com data (1969-2022), computed from the **synthetic** dataset — nine CSV parts in `data/`.
 
 The pipeline runs in `notebook-synthetic.ipynb`. 
 
