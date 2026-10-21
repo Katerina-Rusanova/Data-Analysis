@@ -12,11 +12,9 @@ The pipeline runs in `notebook-synthetic.ipynb`.
 ## Folders layout
 ```
 <this folder>/
-├── notebook-synthetic.ipynb     ← open in Jupyter; Restart Kernel → Run All
-├── requirements.txt             ← pip install -r to rebuild the venv, then run the notebook
 ├── README.md
+├── requirements.txt             ← pip install -r to rebuild the venv, then run the notebook
 ├── data/
 │   └── realtor-data-synthetic-part-01.csv … part-09.csv   (each < 24 MB)
+├── notebook-synthetic.ipynb     ← open in Jupyter; Restart Kernel → Run All
 ```
-
-
