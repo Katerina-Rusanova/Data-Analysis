@@ -1,13 +1,15 @@
-# EDA notebook — synthetic realtor.com listings
+# Data Analysis
+
+## Exploratory Data Analysis notebook
 
 This folder holds an exploratory data analysis of ~2.2M synthetic real-estate property
 listings modelled on realtor.com data (1969-2022).
 
-The pipeline runs in `notebook-synthetic.ipynb`. Everything is computed from the
-**synthetic** dataset — nine CSV parts in `data/`.
+Everything is computed from the **synthetic** dataset — nine CSV parts in `data/`.
 
-## Layout
+The pipeline runs in `notebook-synthetic.ipynb`. 
 
+## Folders layout
 ```
 <this folder>/
 ├── notebook-synthetic.ipynb     ← open in Jupyter; Restart Kernel → Run All
