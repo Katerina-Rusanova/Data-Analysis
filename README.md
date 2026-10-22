@@ -22,16 +22,13 @@ like. The notebook covers five steps:
 - **Market overview at a glance.** See which regions have the most listings and which
   are the most and least expensive.
 - **What drives price.** In the focused market, price follows the number of bathrooms
-  (0.57) more than house size (0.48) or bedrooms (0.38). Lot size has almost no effect
-  (0.19).
-- **The typical home.** The most common property has 3 bedrooms and 2 bathrooms, with a
-  median price of about USD 190,000. This gives a realistic baseline for pricing or
-  comparing listings.
+  more than house size or bedrooms. Lot size has almost no effect.
+- **The typical home.** Shows the most common combination of bedrooms and bathrooms and
+  its median price. This gives a realistic baseline for pricing or comparing listings.
 - **Honest numbers.** Each finding says whether it applies to the whole dataset or only
   to the focused market. Effects caused by outliers or filled-in values are flagged, so a
   figure from the subset isn't mistaken for a national trend.
-- **Reproducible and easy to run.** The data is split into nine CSV files under 24 MB
-  each, and `requirements.txt` lists the exact package versions. Open the notebook and
+- **Reproducible and easy to run.** The data is split into small CSV files, and `requirements.txt` lists the exact package versions. Open the notebook and
   choose Restart Kernel → Run All to reproduce every chart and number.
 - **A reusable template.** The same clean → describe → analyse → correlate → summarise
   steps can be applied to any other tabular dataset.
