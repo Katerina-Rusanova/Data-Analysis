@@ -59,3 +59,23 @@ The pipeline runs in `notebook-pseudonymised.ipynb`.
 │   └── realtor-data-pseudonymised-part-01.csv … part-09.csv  (each < 24 MB)
 ├── notebook-pseudonymised.ipynb                          ← open in Jupyter; Restart Kernel → Run All
 ```
+
+## Recreate the Environment
+
+Needs Python 3.14. From this folder:
+
+```bash
+python3.14 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+```
+
+Then either open `notebook-pseudonymised.ipynb` in an editor that runs notebooks (e.g. VS Code
+with the Jupyter extension, picking `.venv` as the kernel), or run it end to end from
+the terminal:
+
+```bash
+.venv/bin/jupyter nbconvert --to notebook --execute --inplace notebook-pseudonymised.ipynb
+```
+
+The notebook reads `data/realtor-data-pseudonymised-part-*.csv` relative to its own folder,
+which is where Jupyter, VS Code and `nbconvert` run it by default. On Windows use `.venv\Scripts\` in place of `.venv/bin/`.
