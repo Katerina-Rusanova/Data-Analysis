@@ -2,8 +2,11 @@
 
 ## Project Goal
 
-The goal is to find out what drives property prices and what a typical listing looks
-like. The notebook covers five steps:
+The goal is to turn a large, raw dataset into a clear and trustworthy understanding of
+what it contains: how the key measures vary, which factors drive them, and what a
+typical record looks like. 
+
+The notebook covers five steps:
 
 1. **Data cleaning.** Fix the data types, remove duplicates and fill in missing values
    for bedrooms, bathrooms, lot size and house size.
